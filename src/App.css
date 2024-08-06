@@ -1,5 +1,18 @@
-.App {
+/* .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
 }
 
 .App-logo {
@@ -34,5 +47,37 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+/* App.css */
+
+/* Default styles (desktop view) */
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Responsive styles (mobile view) */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .dashboard-stats,
+  .net-profit,
+  .activity-chart,
+  .goals,
+  .popular-dishes,
+  .menus,
+  .recent-orders,
+  .customer-feedback {
+    width: 100%;
   }
 }
